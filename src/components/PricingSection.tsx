@@ -2,13 +2,13 @@ import { Check, Star, ArrowRight } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 const features = [
-  "Prospecção inteligente de leads",
-  "Prompts personalizados por nicho",
-  "Organização de contatos",
-  "Todos os bônus inclusos",
-  "Suporte via comunidade",
-  "Atualizações contínuas",
-];
+"Prospecção inteligente de leads",
+"Prompts personalizados por nicho",
+"Organização de contatos",
+"Todos os bônus inclusos",
+"Suporte via comunidade",
+"Atualizações contínuas"];
+
 
 const PricingSection = () => {
   return (
@@ -42,19 +42,19 @@ const PricingSection = () => {
                 <span className="text-muted-foreground">/mês</span>
               </div>
               <ul className="space-y-2.5 md:space-y-3 text-left mb-6 md:mb-8">
-                {features.map((f, i) => (
-                  <li key={i} className="flex items-center gap-3 text-sm">
+                {features.map((f, i) =>
+                <li key={i} className="flex items-center gap-3 text-sm">
                     <Check className="w-4 h-4 text-primary shrink-0" />
                     {f}
                   </li>
-                ))}
+                )}
               </ul>
               <a
                 href="https://pay.cakto.com.br/4fuejyf_776810"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex w-full items-center justify-center gap-2 bg-primary text-primary-foreground font-semibold py-3.5 md:py-4 rounded-xl text-center glow-primary hover:brightness-110 active:scale-[0.98] transition-all duration-300"
-              >
+                className="flex w-full items-center justify-center gap-2 bg-primary text-primary-foreground font-semibold py-3.5 md:py-4 rounded-xl text-center glow-primary hover:brightness-110 active:scale-[0.98] transition-all duration-300">
+
                 Começar Agora
                 <ArrowRight className="w-4 h-4" />
               </a>
@@ -67,16 +67,16 @@ const PricingSection = () => {
               <h3 className="font-display text-lg md:text-xl font-bold mb-1 mt-2">Plano Vitalício</h3>
               <p className="text-muted-foreground text-sm mb-5 md:mb-6">Pague uma vez, use para sempre</p>
               <div className="mb-5 md:mb-6">
-                <span className="font-display text-4xl md:text-5xl font-extrabold">R$ 150</span>
+                <span className="font-display text-4xl md:text-5xl font-extrabold">R$ 149,90</span>
                 <span className="text-muted-foreground"> /único</span>
               </div>
               <ul className="space-y-2.5 md:space-y-3 text-left mb-6 md:mb-8">
-                {features.map((f, i) => (
-                  <li key={i} className="flex items-center gap-3 text-sm">
+                {features.map((f, i) =>
+                <li key={i} className="flex items-center gap-3 text-sm">
                     <Check className="w-4 h-4 text-primary shrink-0" />
                     {f}
                   </li>
-                ))}
+                )}
                 <li className="flex items-center gap-3 text-sm font-semibold text-primary">
                   <Check className="w-4 h-4 shrink-0" />
                   Acesso vitalício
@@ -86,8 +86,8 @@ const PricingSection = () => {
                 href="https://pay.cakto.com.br/cz2hi5z_776929"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full border border-primary text-primary font-semibold py-3.5 md:py-4 rounded-xl text-center hover:bg-primary/10 active:scale-[0.98] transition-all duration-300"
-              >
+                className="block w-full border border-primary text-primary font-semibold py-3.5 md:py-4 rounded-xl text-center hover:bg-primary/10 active:scale-[0.98] transition-all duration-300">
+
                 Garantir Acesso Vitalício
               </a>
               <p className="text-xs text-muted-foreground mt-3">Garantia de 7 dias</p>
@@ -95,8 +95,8 @@ const PricingSection = () => {
           </AnimatedSection>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default PricingSection;
