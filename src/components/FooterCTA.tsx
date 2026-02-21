@@ -13,17 +13,20 @@ const FooterCTA = () => {
 
             <div className="relative z-10">
               <h2 className="font-display text-3xl md:text-5xl font-bold mb-6 leading-tight">
-                O poder de encontrar clientes{" "}
-                <span className="gradient-text">na palma da sua mão</span>
+                Seu primeiro cliente está a{" "}
+                <span className="gradient-text">um clique de distância</span>
               </h2>
-              <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">
-                Crie, prospecte e feche clientes com o Leadfy Inteligência.
+              <p className="text-muted-foreground text-lg mb-4 max-w-xl mx-auto">
+                Comece do zero, crie apps com IA e venda para empresas — mesmo sem experiência.
+              </p>
+              <p className="text-muted-foreground text-sm mb-8 max-w-md mx-auto">
+                Sem risco: garantia de 7 dias. Se não gostar, devolvemos seu dinheiro.
               </p>
               <a
                 href="#preco"
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold text-lg px-10 py-4 rounded-xl glow-primary hover:brightness-110 hover:scale-[1.02] transition-all duration-300"
               >
-                Assinar agora
+                Quero meu primeiro cliente
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>

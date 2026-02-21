@@ -5,26 +5,26 @@ const steps = [
   {
     num: "01",
     icon: Search,
-    title: "Encontre leads no seu nicho",
-    desc: "O sistema busca empresas que precisam de apps no seu segmento automaticamente.",
+    title: "Escolha um nicho lucrativo",
+    desc: "O Leadfy sugere nichos com alta demanda por apps e te mostra exatamente quais empresas abordar.",
   },
   {
     num: "02",
-    icon: MessageSquare,
-    title: "Receba abordagens prontas",
-    desc: "Prompts inteligentes geram mensagens personalizadas por nicho para cada lead.",
+    icon: Sparkles,
+    title: "Crie o app com IA",
+    desc: "Use inteligência artificial para gerar um app funcional em minutos — sem precisar programar nada.",
   },
   {
     num: "03",
-    icon: Sparkles,
-    title: "Personalize e envie",
-    desc: "Ajuste a mensagem em segundos e envie diretamente para o decisor da empresa.",
+    icon: MessageSquare,
+    title: "Receba abordagens prontas",
+    desc: "Prompts inteligentes geram mensagens de venda personalizadas para cada tipo de empresa.",
   },
   {
     num: "04",
     icon: Rocket,
-    title: "Feche clientes e fature",
-    desc: "Com prospecção consistente, feche novos contratos toda semana e escale seu negócio.",
+    title: "Feche seus primeiros clientes",
+    desc: "Envie as abordagens, negocie com confiança e comece a faturar com apps toda semana.",
   },
 ];
 
@@ -34,10 +34,16 @@ const StepsSection = () => {
       <div className="container max-w-5xl mx-auto">
         <AnimatedSection>
           <div className="text-center mb-10 md:mb-16">
+            <p className="text-primary font-semibold mb-3 uppercase tracking-wider text-xs md:text-sm">
+              Como Funciona
+            </p>
             <h2 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
-              Com o Leadfy, prospectar é{" "}
-              <span className="gradient-text">simples e rápido</span>
+              Do zero ao primeiro cliente{" "}
+              <span className="gradient-text">em 4 passos</span>
             </h2>
+            <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
+              Você não precisa de experiência. O Leadfy te guia em cada etapa.
+            </p>
           </div>
         </AnimatedSection>
 

@@ -2,9 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import AnimatedSection from "./AnimatedSection";
 
 const stats = [
-  { value: 500, suffix: "+", label: "Leads encontrados por usuários" },
-  { value: 50, suffix: "K+", label: "Mensagens enviadas na plataforma" },
-  { value: 98, suffix: "%", label: "De satisfação dos clientes" },
+  { value: 500, suffix: "+", label: "Pessoas usando o Leadfy para vender apps" },
+  { value: 2, suffix: "K+", label: "Ticket médio por app vendido (R$)" },
+  { value: 15, suffix: " min", label: "Por dia para prospectar clientes" },
+  { value: 98, suffix: "%", label: "De satisfação entre os usuários" },
 ];
 
 function useCountUp(target: number, isVisible: boolean, duration = 2000) {
@@ -19,7 +20,6 @@ function useCountUp(target: number, isVisible: boolean, duration = 2000) {
     const tick = (now: number) => {
       const elapsed = now - startTime;
       const progress = Math.min(elapsed / duration, 1);
-      // ease out cubic
       const eased = 1 - Math.pow(1 - progress, 3);
       setCount(Math.round(eased * target));
       if (progress < 1) requestAnimationFrame(tick);
@@ -35,7 +35,7 @@ const StatItem = ({ value, suffix, label, isVisible, delay }: { value: number; s
 
   return (
     <div className="text-center">
-      <div className="font-display text-5xl md:text-6xl font-extrabold gradient-text mb-2">
+      <div className="font-display text-4xl md:text-5xl font-extrabold gradient-text mb-2">
         {count}
         <span>{suffix}</span>
       </div>
@@ -69,14 +69,16 @@ const StatsSection = () => {
       <div className="container max-w-5xl mx-auto">
         <AnimatedSection>
           <div className="text-center mb-14">
+            <p className="text-primary font-semibold mb-3 uppercase tracking-wider text-xs md:text-sm">
+              Resultados Reais
+            </p>
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-3">
-              Nossos Resultados
+              Números que <span className="gradient-text">falam por si</span>
             </h2>
-            <p className="text-muted-foreground">Confira alguns de nossos números</p>
           </div>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
           {stats.map((s, i) => (
             <AnimatedSection key={i} delay={i * 150}>
               <StatItem {...s} isVisible={isVisible} delay={i * 200} />

@@ -1,13 +1,13 @@
-import { Search, Mail, TrendingUp, Users, Megaphone, Sparkles } from "lucide-react";
+import { Search, Mail, TrendingUp, Users, Sparkles, Shield } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 const benefits = [
-  { icon: Search, title: "Encontrar empresas automaticamente", desc: "O sistema busca leads qualificados no seu nicho." },
-  { icon: Mail, title: "Mensagens prontas por nicho", desc: "Abordagens testadas que geram respostas." },
-  { icon: TrendingUp, title: "Prospecção rápida e previsível", desc: "Saiba exatamente o que fazer todo dia." },
-  { icon: Users, title: "Organização de contatos", desc: "Nunca mais perca um lead importante." },
-  { icon: Megaphone, title: "Mais clientes sem anúncios", desc: "Prospecção orgânica e sem custo extra." },
-  { icon: Sparkles, title: "Sistema simples de usar", desc: "Funciona mesmo sem experiência em vendas." },
+  { icon: Sparkles, title: "Crie apps sem programar", desc: "Use IA para gerar apps funcionais em minutos, sem escrever uma linha de código." },
+  { icon: Search, title: "Encontre empresas automaticamente", desc: "O sistema busca leads qualificados no seu nicho todos os dias." },
+  { icon: Mail, title: "Mensagens de venda prontas", desc: "Abordagens testadas e personalizadas por nicho que geram respostas." },
+  { icon: TrendingUp, title: "Prospecção rápida e previsível", desc: "Saiba exatamente o que fazer todo dia para fechar clientes." },
+  { icon: Users, title: "Funciona para iniciantes", desc: "Não precisa de experiência em vendas ou programação para começar." },
+  { icon: Shield, title: "Método validado", desc: "Centenas de pessoas já estão faturando com apps usando o Leadfy." },
 ];
 
 const BenefitsSection = () => {
@@ -20,7 +20,7 @@ const BenefitsSection = () => {
           </p>
           <h2 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold mb-10 md:mb-14">
             Tudo que você precisa para{" "}
-            <span className="gradient-text">fechar mais clientes</span>
+            <span className="gradient-text">criar, vender e faturar</span>
           </h2>
         </AnimatedSection>
 

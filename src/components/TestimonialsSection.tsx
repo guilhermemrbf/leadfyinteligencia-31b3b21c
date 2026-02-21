@@ -9,9 +9,9 @@ const testimonials = [
     stars: 5,
   },
   {
-    name: "Camila Santos",
-    role: "Freelancer de Apps",
-    text: "Eu sempre soube criar apps, mas nunca conseguia vender. O Leadfy mudou isso completamente. Agora prospectar faz parte da minha rotina diária.",
+    name: "Ana Paula Lima",
+    role: "Iniciante — nunca tinha programado",
+    text: "Eu achava que precisava saber programar pra vender apps. Com o Leadfy, criei meu primeiro app com IA e fechei um cliente em 10 dias. Mudou minha vida.",
     stars: 5,
   },
   {
@@ -22,8 +22,8 @@ const testimonials = [
   },
   {
     name: "Juliana Costa",
-    role: "Criadora de SaaS",
-    text: "Já tentei de tudo: anúncios, cold email genérico, indicações... Nada funcionava consistentemente. Com o Leadfy eu finalmente tenho um método previsível.",
+    role: "Freelancer — começou do zero",
+    text: "Já tentei de tudo: anúncios, cold email genérico, indicações... Nada funcionava. Com o Leadfy eu finalmente tenho um método previsível e consigo fechar clientes toda semana.",
     stars: 5,
   },
 ];
@@ -35,13 +35,14 @@ const TestimonialsSection = () => {
         <AnimatedSection>
           <div className="text-center mb-10 md:mb-14">
             <p className="text-primary font-semibold mb-3 uppercase tracking-wider text-xs md:text-sm">
-              Prova Social
+              Quem já usa, recomenda
             </p>
             <h2 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
-              Quem usa, <span className="gradient-text">recomenda</span>
+              Resultados reais de{" "}
+              <span className="gradient-text">pessoas reais</span>
             </h2>
             <p className="text-muted-foreground text-base md:text-lg max-w-xl mx-auto">
-              Veja o que nossos clientes estão dizendo sobre o Leadfy Inteligência.
+              De iniciantes a agências — veja quem já está faturando com o Leadfy.
             </p>
           </div>
         </AnimatedSection>
