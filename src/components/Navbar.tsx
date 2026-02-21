@@ -36,7 +36,7 @@ const Navbar = () => {
             href="#preco"
             className="hidden sm:inline-flex bg-primary text-primary-foreground font-semibold text-sm px-5 py-2.5 rounded-xl hover:brightness-110 transition-all duration-300"
           >
-            Assinar agora
+            Começar agora
           </a>
           <button
             onClick={() => setOpen(!open)}
@@ -65,7 +65,7 @@ const Navbar = () => {
             onClick={() => setOpen(false)}
             className="block text-center bg-primary text-primary-foreground font-semibold text-sm px-5 py-3 rounded-xl mt-2"
           >
-            Assinar agora
+            Começar agora
           </a>
         </div>
       )}

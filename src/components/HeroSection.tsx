@@ -1,4 +1,4 @@
-import { ArrowRight, Monitor, Shield } from "lucide-react";
+import { ArrowRight, Play, Shield, Zap, Users } from "lucide-react";
 import heroMockup from "@/assets/leadfy-hero-mockup.png";
 
 const tabs = ["Dashboard", "Prospecção", "Prompts", "Contatos", "Assistente"];
@@ -12,19 +12,19 @@ const HeroSection = () => {
 
       <div className="container max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-10 md:mb-16">
-          {/* Badge */}
+          {/* Social proof badge */}
           <div className="inline-flex items-center gap-2 border border-primary/30 bg-primary/5 backdrop-blur-sm px-4 py-1.5 md:px-5 md:py-2 rounded-full mb-8 md:mb-10 animate-fade-up">
-            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-xs md:text-sm text-primary font-medium">Nova versão disponível</span>
+            <Users className="w-3.5 h-3.5 text-primary" />
+            <span className="text-xs md:text-sm text-primary font-medium">+500 pessoas já estão criando e vendendo apps</span>
           </div>
 
-          <h1 className="font-display text-[2rem] sm:text-4xl md:text-6xl lg:text-[4.5rem] font-extrabold leading-[1.1] mb-5 md:mb-7 max-w-4xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            Encontre clientes para seus apps{" "}
-            <span className="gradient-text">todos os dias</span>
+          <h1 className="font-display text-[2rem] sm:text-4xl md:text-6xl lg:text-[4.5rem] font-extrabold leading-[1.1] mb-5 md:mb-7 max-w-5xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
+            Crie apps com IA e venda para empresas —{" "}
+            <span className="gradient-text">mesmo sem saber programar</span>
           </h1>
 
           <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 md:mb-10 leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            Conheça o Leadfy e prospecte clientes com prompts inteligentes, sem depender de indicações ou sorte.
+            O Leadfy te guia da ideia ao primeiro cliente: encontre oportunidades, gere apps prontos e receba abordagens de venda personalizadas. Tudo em uma plataforma.
           </p>
 
           {/* Dual CTA */}
@@ -33,28 +33,32 @@ const HeroSection = () => {
               href="#preco"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-semibold text-base md:text-lg px-7 md:px-8 py-3.5 md:py-4 rounded-xl glow-primary hover:brightness-110 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
             >
-              Começar agora
+              Quero começar a vender apps
               <ArrowRight className="w-5 h-5" />
             </a>
             <a
-              href="#preco"
+              href="#como-funciona"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-border/60 bg-muted/20 backdrop-blur-sm text-foreground font-semibold text-base md:text-lg px-7 md:px-8 py-3.5 md:py-4 rounded-xl hover:bg-muted/40 active:scale-[0.98] transition-all duration-300"
             >
-              <Monitor className="w-5 h-5" />
-              Ver planos
+              <Play className="w-5 h-5" />
+              Ver como funciona
             </a>
           </div>
 
           {/* Trust badges */}
-          <div className="flex items-center justify-center gap-4 md:gap-6 text-[0.65rem] md:text-xs text-muted-foreground uppercase tracking-widest animate-fade-up" style={{ animationDelay: "0.35s" }}>
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-[0.65rem] md:text-xs text-muted-foreground uppercase tracking-widest animate-fade-up" style={{ animationDelay: "0.35s" }}>
             <span className="flex items-center gap-1.5">
-              <Monitor className="w-3 md:w-3.5 h-3 md:h-3.5" />
-              Qualquer dispositivo
+              <Zap className="w-3 md:w-3.5 h-3 md:h-3.5" />
+              Sem experiência necessária
             </span>
             <span className="text-border">•</span>
             <span className="flex items-center gap-1.5">
               <Shield className="w-3 md:w-3.5 h-3 md:h-3.5" />
               Garantia de 7 dias
+            </span>
+            <span className="text-border">•</span>
+            <span className="flex items-center gap-1.5">
+              Cancele quando quiser
             </span>
           </div>
         </div>

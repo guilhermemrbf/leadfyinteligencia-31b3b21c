@@ -8,32 +8,32 @@ import AnimatedSection from "./AnimatedSection";
 
 const faqs = [
   {
+    q: "Preciso saber programar para usar o Leadfy?",
+    a: "Não! O Leadfy foi feito para iniciantes. Você cria apps usando inteligência artificial e recebe tudo pronto para vender — sem escrever código.",
+  },
+  {
     q: "E se eu não souber vender?",
-    a: "O Leadfy foi feito exatamente para quem não é vendedor. Você recebe prompts prontos e abordagens testadas — é só copiar, personalizar e enviar.",
+    a: "Esse é o principal problema que o Leadfy resolve. Você recebe mensagens prontas por nicho, testadas e otimizadas para gerar respostas. É só copiar, personalizar e enviar.",
   },
   {
-    q: "Não tenho tempo para prospectar. Funciona mesmo assim?",
-    a: "Com 15 a 30 minutos por dia você já consegue prospectar de forma consistente. O sistema elimina o trabalho pesado de pesquisa e escrita.",
+    q: "Quanto tempo leva para conseguir o primeiro cliente?",
+    a: "Com 15 a 30 minutos por dia, muitos usuários fecham o primeiro cliente em 1 a 3 semanas. O sistema elimina o trabalho pesado de pesquisa e escrita.",
   },
   {
-    q: "Não sei o que falar para os clientes. E agora?",
-    a: "Esse é o principal problema que o Leadfy resolve. Você recebe mensagens prontas por nicho, testadas e otimizadas para gerar respostas.",
+    q: "Quanto posso cobrar por um app?",
+    a: "O valor médio de um app simples para empresas varia entre R$ 2.000 e R$ 10.000. Um único cliente já paga anos de Leadfy.",
   },
   {
     q: "Já tentei prospectar e não consegui clientes.",
     a: "Provavelmente faltou método e mensagens certas. O Leadfy te dá um sistema passo a passo que funciona mesmo para quem nunca vendeu.",
   },
   {
-    q: "Meu nicho é muito difícil. Vai funcionar?",
-    a: "O Leadfy cobre diversos nichos e gera abordagens personalizadas. Se existem empresas no seu nicho, o sistema encontra e te ajuda a abordá-las.",
+    q: "Funciona para qualquer nicho?",
+    a: "O Leadfy cobre diversos nichos e gera abordagens personalizadas. Se existem empresas no seu segmento, o sistema encontra e te ajuda a abordá-las.",
   },
   {
-    q: "Ferramentas de leads não são complicadas demais?",
-    a: "O Leadfy é simples e direto. Nada de dashboards complexos. Você acessa, encontra leads e tem as mensagens prontas em poucos cliques.",
-  },
-  {
-    q: "Isso funciona para quem vende apps?",
-    a: "Foi feito especificamente para isso. Todos os prompts, scripts e abordagens são pensados para quem vende apps e soluções digitais.",
+    q: "E se eu não gostar?",
+    a: "Você tem 7 dias de garantia incondicional. Se não gostar por qualquer motivo, devolvemos 100% do seu dinheiro. Sem perguntas.",
   },
 ];
 
