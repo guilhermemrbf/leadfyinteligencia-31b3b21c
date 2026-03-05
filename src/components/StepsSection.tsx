@@ -5,26 +5,26 @@ const steps = [
   {
     num: "01",
     icon: Search,
-    title: "Escolha um nicho lucrativo",
-    desc: "O Leadfy sugere nichos com alta demanda por apps e te mostra exatamente quais empresas abordar.",
+    title: "Escolha um nicho que paga caro",
+    desc: "O Leadfy revela nichos com empresas desesperadas por um app. Nichos onde você cobra R$ 2K a R$ 10K tranquilamente.",
   },
   {
     num: "02",
     icon: Sparkles,
-    title: "Crie o app com IA",
-    desc: "Use inteligência artificial para gerar um app funcional em minutos — sem precisar programar nada.",
+    title: "Crie o app em minutos com IA",
+    desc: "A inteligência artificial gera um app profissional completo. Seu cliente vai achar que custou R$ 50 mil.",
   },
   {
     num: "03",
     icon: MessageSquare,
-    title: "Receba abordagens prontas",
-    desc: "Prompts inteligentes geram mensagens de venda personalizadas para cada tipo de empresa.",
+    title: "Receba mensagens que vendem sozinhas",
+    desc: "Prompts inteligentes criam abordagens personalizadas que fazem o cliente QUERER responder. É quase injusto.",
   },
   {
     num: "04",
     icon: Rocket,
-    title: "Feche seus primeiros clientes",
-    desc: "Envie as abordagens, negocie com confiança e comece a faturar com apps toda semana.",
+    title: "Feche e fature toda semana",
+    desc: "Envie, negocie, feche. Repita. Membros do Leadfy fecham 2 a 4 clientes por semana. Quanto você quer ganhar?",
   },
 ];
 
@@ -35,14 +35,14 @@ const StepsSection = () => {
         <AnimatedSection>
           <div className="text-center mb-10 md:mb-16">
             <p className="text-primary font-semibold mb-3 uppercase tracking-wider text-xs md:text-sm">
-              Como Funciona
+              ⚡ Simples. Rápido. Lucrativo.
             </p>
             <h2 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
               Do zero ao primeiro cliente{" "}
-              <span className="gradient-text">em 4 passos</span>
+              <span className="gradient-text">em 4 passos ridiculamente simples</span>
             </h2>
             <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
-              Você não precisa de experiência. O Leadfy te guia em cada etapa.
+              Não precisa de experiência, diploma ou conexões. O Leadfy faz o trabalho pesado por você.
             </p>
           </div>
         </AnimatedSection>
@@ -51,7 +51,6 @@ const StepsSection = () => {
           {steps.map((s, i) => (
             <AnimatedSection key={i} delay={i * 100}>
               <div className="glass-card p-5 md:p-7 hover-card-glow hover-inner-glow group h-full relative overflow-hidden">
-                {/* Big number background */}
                 <span className="absolute -top-2 -right-2 font-display text-[4rem] md:text-[5rem] font-extrabold text-primary/[0.04] leading-none select-none pointer-events-none group-hover:text-primary/[0.08] transition-colors duration-500">
                   {s.num}
                 </span>
