@@ -14,11 +14,11 @@ const faqs = [
   },
   {
     q: "E se eu não souber vender?",
-    a: "PERFEITO — esse é justamente o problema que resolvemos. Você recebe mensagens prontas, testadas e otimizadas por nicho. É copiar, colar e enviar. Os clientes respondem sozinhos.",
+    a: "PERFEITO — esse é justamente o problema que resolvemos. Você recebe mensagens prontas, testadas e otimizadas por nicho. É literalmente copiar, colar e enviar. Os clientes respondem sozinhos.",
   },
   {
-    q: "Quanto tempo leva para o primeiro cliente?",
-    a: "Com 15 minutos por dia, a maioria dos nossos membros fecha o primeiro cliente em 7 a 14 dias. Alguns fecham no primeiro dia.",
+    q: "Quanto tempo leva para conseguir o primeiro cliente?",
+    a: "Com 15 minutos por dia, a maioria dos nossos membros fecha o primeiro cliente em 7 a 14 dias. Alguns fecham no primeiro dia. O sistema elimina toda a adivinhação.",
   },
   {
     q: "Quanto posso cobrar por um app?",
@@ -26,15 +26,15 @@ const faqs = [
   },
   {
     q: "Já tentei prospectar e não deu certo.",
-    a: "Normal — porque você tentou sem método. O Leadfy te dá um sistema que funciona mesmo para quem NUNCA vendeu na vida. É diferente de tudo que você já tentou.",
+    a: "Normal — porque você tentou sem método. O Leadfy te dá um sistema passo a passo que funciona mesmo para quem NUNCA vendeu na vida. É diferente de tudo que você já tentou.",
   },
   {
     q: "E se eu não gostar?",
-    a: "Sem problema. Você tem 7 dias de garantia INCONDICIONAL. Não gostou? 100% do dinheiro de volta. Sem burocracia, sem perguntas. Risco completamente ZERO.",
+    a: "Sem problema. Você tem 7 dias de garantia INCONDICIONAL. Não gostou? Devolvemos 100% do seu dinheiro na hora. Sem burocracia, sem perguntas. O risco é completamente ZERO.",
   },
   {
     q: "Por que o preço está tão baixo?",
-    a: "Estamos em fase de crescimento e queremos mais casos de sucesso. Esse preço NÃO vai durar. Quem entra agora garante a condição especial para sempre.",
+    a: "Porque estamos em fase de crescimento e queremos mais casos de sucesso. Esse preço NÃO vai durar. Quem entrar agora garante a condição especial para sempre.",
   },
 ];
 
@@ -45,7 +45,7 @@ const FAQSection = () => {
         <AnimatedSection>
           <div className="text-center mb-8 md:mb-12">
             <p className="text-primary font-semibold mb-3 uppercase tracking-wider text-xs md:text-sm">
-              Suas últimas dúvidas
+              ❓ Suas Últimas Dúvidas
             </p>
             <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-3">
               Respondemos tudo para você{" "}
@@ -54,18 +54,18 @@ const FAQSection = () => {
           </div>
         </AnimatedSection>
 
-        <AnimatedSection delay={100} animation="scale-in">
-          <Accordion type="single" collapsible className="space-y-2.5">
+        <AnimatedSection delay={100}>
+          <Accordion type="single" collapsible className="space-y-2.5 md:space-y-3">
             {faqs.map((faq, i) => (
               <AccordionItem
                 key={i}
                 value={`faq-${i}`}
-                className="glass-card px-4 md:px-6 border-border/40 hover:border-primary/20 transition-colors duration-500"
+                className="glass-card px-4 md:px-6 border-border/50 hover:border-primary/20 transition-colors duration-300"
               >
                 <AccordionTrigger className="text-left font-semibold hover:no-underline py-4 md:py-5 text-sm md:text-base">
                   {faq.q}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pb-4 md:pb-5 text-sm leading-relaxed">
+                <AccordionContent className="text-muted-foreground pb-4 md:pb-5 text-sm">
                   {faq.a}
                 </AccordionContent>
               </AccordionItem>
