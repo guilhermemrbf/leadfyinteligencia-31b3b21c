@@ -7,8 +7,10 @@ const tabs = ["Dashboard", "Prospecção", "Prompts", "Contatos", "Assistente"];
 const HeroSection = () => {
   return (
     <section className="relative min-h-[100svh] flex flex-col items-center justify-center px-4 py-20 pt-24 md:pt-32 overflow-hidden">
-      {/* Background effects — single blur for perf */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] md:w-[800px] h-[350px] md:h-[500px] bg-primary/6 rounded-full blur-[120px] md:blur-[160px] pointer-events-none" />
+      {/* Animated gradient background */}
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] md:w-[900px] h-[400px] md:h-[600px] rounded-full pointer-events-none hero-gradient-animated"
+        style={{ background: "radial-gradient(ellipse at center, hsl(199 75% 48% / 0.12), hsl(196 85% 58% / 0.06), transparent 70%)" }}
+      />
 
       <div className="container max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-8 md:mb-16">
@@ -19,30 +21,29 @@ const HeroSection = () => {
           </div>
 
           {/* Social proof badge */}
-          <div className="inline-flex items-center gap-2 border border-primary/30 bg-primary/5 backdrop-blur-sm px-3 py-1 md:px-5 md:py-2 rounded-full mb-6 md:mb-10 animate-fade-up" style={{ animationDelay: "0.05s" }}>
+          <div className="inline-flex items-center gap-2 border border-primary/30 bg-primary/5 backdrop-blur-sm px-3 py-1 md:px-5 md:py-2 rounded-full mb-6 md:mb-10 animate-fade-up" style={{ animationDelay: "50ms" }}>
             <Users className="w-3 h-3 md:w-3.5 md:h-3.5 text-primary" />
-            <span className="text-[10px] md:text-sm text-primary font-medium">+500 pessoas já faturam com apps</span>
+            <span className="text-[10px] md:text-sm text-primary font-medium">+500 pessoas já faturam com apps nos últimos 12 meses</span>
           </div>
 
-          <h1 className="font-display text-[1.6rem] sm:text-3xl md:text-6xl lg:text-[4.5rem] font-extrabold leading-[1.1] mb-4 md:mb-7 max-w-5xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            Enquanto você pensa,{" "}
-            <span className="gradient-text">outros já estão faturando R$ 10K/mês</span>{" "}
-            vendendo apps com IA
+          <h1 className="font-display text-[1.6rem] sm:text-3xl md:text-6xl lg:text-[4.5rem] font-extrabold leading-[1.1] mb-4 md:mb-7 max-w-5xl mx-auto animate-fade-up" style={{ animationDelay: "100ms" }}>
+            R$ 10K/mês vendendo apps{" "}
+            <span className="gradient-text">para quem cansou de esperar resultados</span>
           </h1>
 
-          <p className="text-sm md:text-xl text-muted-foreground max-w-2xl mx-auto mb-3 md:mb-4 leading-relaxed animate-fade-up" style={{ animationDelay: "0.15s" }}>
-            Sem programar. Sem experiência. O Leadfy te entrega o app pronto, os clientes certos e as mensagens que vendem. <strong className="text-foreground">Você só precisa clicar em "enviar".</strong>
+          <p className="text-sm md:text-xl text-muted-foreground max-w-2xl mx-auto mb-3 md:mb-4 leading-relaxed animate-fade-up" style={{ animationDelay: "150ms" }}>
+            Sem programar. Sem experiência. O Leadfy entrega o app pronto, os clientes certos e as mensagens que vendem. <strong className="text-foreground">Você só clica em "enviar".</strong>
           </p>
 
-          <p className="text-xs md:text-base text-destructive font-semibold mb-6 md:mb-10 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            ⚠️ Cada dia sem o Leadfy é dinheiro que você deixa na mesa.
+          <p className="text-xs md:text-base text-destructive font-semibold mb-6 md:mb-10 animate-fade-up" style={{ animationDelay: "200ms" }}>
+            ⚠️ Cada dia sem o Leadfy é dinheiro que fica na mesa.
           </p>
 
           {/* CTA */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4 mb-4 md:mb-6 animate-fade-up" style={{ animationDelay: "0.25s" }}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4 mb-4 md:mb-6 animate-fade-up" style={{ animationDelay: "300ms" }}>
             <a
               href="#preco"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-bold text-sm md:text-lg px-6 md:px-8 py-3 md:py-4 rounded-xl glow-primary hover:brightness-110 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 animate-glow-pulse"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-bold text-sm md:text-lg px-6 md:px-8 py-3 md:py-4 rounded-xl glow-primary btn-shimmer animate-glow-pulse"
             >
               🔥 QUERO FATURAR COM APPS AGORA
               <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
@@ -57,7 +58,7 @@ const HeroSection = () => {
           </div>
 
           {/* Trust badges */}
-          <div className="flex flex-wrap items-center justify-center gap-3 md:gap-6 text-[0.6rem] md:text-xs text-muted-foreground uppercase tracking-wider animate-fade-up" style={{ animationDelay: "0.3s" }}>
+          <div className="flex flex-wrap items-center justify-center gap-3 md:gap-6 text-[0.6rem] md:text-xs text-muted-foreground uppercase tracking-wider animate-fade-up" style={{ animationDelay: "350ms" }}>
             <span className="flex items-center gap-1">
               <Zap className="w-3 h-3" />
               Sem experiência
@@ -76,7 +77,7 @@ const HeroSection = () => {
         </div>
 
         {/* Two-column: Product + AI Code */}
-        <div className="relative mx-auto max-w-6xl animate-fade-up" style={{ animationDelay: "0.4s" }}>
+        <div className="relative mx-auto max-w-6xl animate-fade-up" style={{ animationDelay: "400ms" }}>
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 md:gap-6 items-start">
             {/* Product showcase */}
             <div className="lg:col-span-3 order-2 lg:order-1">
@@ -96,7 +97,7 @@ const HeroSection = () => {
                 ))}
               </div>
 
-              <div className="relative">
+              <div className="relative img-zoom-container">
                 <div className="absolute inset-0 bg-primary/5 rounded-xl blur-2xl scale-105" />
                 <img
                   src={heroMockup}

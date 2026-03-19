@@ -6,22 +6,22 @@ const pillars = [
   {
     icon: Lightbulb,
     num: "01",
-    title: "Descubra Nichos que Pagam Caro",
-    desc: "A IA encontra empresas desesperadas por um app — nichos onde você pode cobrar R$ 2K a R$ 10K por projeto.",
+    title: "Encontramos nichos que pagam caro",
+    desc: "A IA identifica empresas que precisam de um app — nichos onde você cobra R$ 2K a R$ 10K por projeto, sem negociar.",
     gradient: "from-primary/20 to-primary/5",
   },
   {
     icon: Rocket,
     num: "02",
-    title: "Crie o App em Minutos",
-    desc: "Sem digitar uma linha de código. A IA gera apps profissionais que parecem ter custado R$ 50 mil para desenvolver.",
+    title: "Criamos o app em minutos",
+    desc: "Sem uma linha de código. A IA gera apps profissionais que parecem ter custado R$ 50 mil para desenvolver.",
     gradient: "from-secondary/20 to-secondary/5",
   },
   {
     icon: MessageSquare,
     num: "03",
-    title: "Feche Clientes no Automático",
-    desc: "Mensagens de venda prontas, testadas e irresistíveis. O cliente lê e PRECISA responder. É quase injusto.",
+    title: "Fechamos clientes no automático",
+    desc: "Mensagens de venda prontas e testadas que fazem o cliente QUERER responder. Você só clica em enviar.",
     gradient: "from-primary/20 to-secondary/5",
   },
 ];
@@ -29,6 +29,7 @@ const pillars = [
 const SolutionSection = () => {
   return (
     <section id="solucao" className="section-spacing">
+      <div className="section-gradient-divider -mt-14 mb-0" />
       <div className="container max-w-5xl mx-auto text-center">
         <AnimatedSection>
           <p className="text-primary font-semibold mb-3 uppercase tracking-wider text-xs md:text-sm">
@@ -38,12 +39,12 @@ const SolutionSection = () => {
             3 passos simples. <span className="gradient-text">Resultado inevitável.</span>
           </h2>
           <p className="text-muted-foreground text-base md:text-lg mb-10 md:mb-12 max-w-2xl mx-auto">
-            O Leadfy é a <strong className="text-foreground">única plataforma no Brasil</strong> que te leva do absoluto zero ao primeiro cliente pagante — combinando IA, prospecção e vendas em um único lugar. <span className="text-primary font-semibold">Nada parecido existe no mercado.</span>
+            A <strong className="text-foreground">única plataforma no Brasil</strong> que leva do zero ao primeiro cliente pagante — IA, prospecção e vendas num só lugar.
           </p>
         </AnimatedSection>
 
         <AnimatedSection delay={100}>
-          <div className="relative mx-auto max-w-4xl mb-12 md:mb-16">
+          <div className="relative mx-auto max-w-4xl mb-12 md:mb-16 img-zoom-container">
             <div className="absolute inset-0 bg-primary/5 rounded-xl md:rounded-2xl blur-3xl scale-105" />
             <img
               src={productImg}
@@ -74,7 +75,7 @@ const SolutionSection = () => {
           <div className="mt-10 md:mt-14">
             <a
               href="#preco"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold text-base md:text-lg px-8 py-4 rounded-xl glow-primary hover:brightness-110 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold text-base md:text-lg px-8 py-4 rounded-xl glow-primary btn-shimmer hover:brightness-110 active:scale-[0.98] transition-all duration-300"
             >
               QUERO COMEÇAR A FATURAR AGORA
               <ArrowRight className="w-5 h-5" />

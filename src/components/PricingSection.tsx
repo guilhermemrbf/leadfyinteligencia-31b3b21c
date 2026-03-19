@@ -3,7 +3,7 @@ import AnimatedSection from "./AnimatedSection";
 
 const features = [
   "IA integrada da Leadfy para criar apps",
-  "Melhor prospector de leads do mercado",
+  "Prospector #1 do mercado — leads todos os dias",
   "Área de membros com método completo",
   "Abordagens prontas por nicho",
   "Painel ADM e gestão de contatos",
@@ -15,6 +15,7 @@ const features = [
 const PricingSection = () => {
   return (
     <section id="preco" className="section-spacing">
+      <div className="section-gradient-divider -mt-14 mb-0" />
       <div className="container max-w-5xl mx-auto text-center">
         <AnimatedSection>
           <div className="inline-flex items-center gap-2 border border-destructive/40 bg-destructive/10 px-4 py-1.5 rounded-full mb-6">
@@ -25,10 +26,10 @@ const PricingSection = () => {
             Quanto vale mudar de vida?
           </h2>
           <p className="text-muted-foreground mb-3 max-w-xl mx-auto text-sm md:text-base">
-            Um único cliente paga <strong className="text-foreground">anos</strong> de Leadfy. Você está a uma decisão de distância de um novo patamar financeiro.
+            Um único cliente paga <strong className="text-foreground">anos</strong> de Leadfy. Você está a uma decisão de distância.
           </p>
           <p className="text-primary font-semibold mb-10 md:mb-14 text-sm md:text-base">
-            ⚡ Quem entra hoje garante o menor preço. Amanhã pode ser tarde demais.
+            ⚡ Quem entra hoje garante o menor preço. Amanhã pode ser tarde.
           </p>
         </AnimatedSection>
 
@@ -52,7 +53,6 @@ const PricingSection = () => {
               </div>
               <p className="text-xs text-primary font-semibold mb-5">🔥 Economia de 59% — só enquanto durar</p>
 
-              {/* Key differentiators */}
               <div className="flex items-center justify-center gap-3 mb-5 flex-wrap">
                 <span className="inline-flex items-center gap-1 text-[10px] font-bold text-primary bg-primary/10 px-2 py-1 rounded-full border border-primary/20">
                   <Brain className="w-3 h-3" /> IA Integrada
@@ -77,7 +77,7 @@ const PricingSection = () => {
                 href="https://pay.cakto.com.br/4fuejyf_776810"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex w-full items-center justify-center gap-2 bg-primary text-primary-foreground font-bold py-3.5 md:py-4 rounded-xl text-center glow-primary hover:brightness-110 active:scale-[0.98] transition-all duration-300 text-base"
+                className="flex w-full items-center justify-center gap-2 bg-primary text-primary-foreground font-bold py-3.5 md:py-4 rounded-xl text-center glow-primary btn-shimmer active:scale-[0.98] transition-all duration-300 text-base"
               >
                 🔥 GARANTIR MINHA VAGA AGORA
                 <ArrowRight className="w-4 h-4" />
@@ -111,7 +111,6 @@ const PricingSection = () => {
               </div>
               <p className="text-xs text-primary font-semibold mb-5">💎 Economia de 70% — nunca mais paga nada</p>
 
-              {/* Key differentiators */}
               <div className="flex items-center justify-center gap-3 mb-5 flex-wrap">
                 <span className="inline-flex items-center gap-1 text-[10px] font-bold text-primary bg-primary/10 px-2 py-1 rounded-full border border-primary/20">
                   <Brain className="w-3 h-3" /> IA Integrada
@@ -155,7 +154,7 @@ const PricingSection = () => {
         <AnimatedSection delay={400}>
           <div className="mt-10 md:mt-14 max-w-2xl mx-auto">
             <p className="text-muted-foreground text-sm md:text-base">
-              💡 <strong className="text-foreground">Pense assim:</strong> um único app vendido por R$ 2.000 já paga <strong className="text-foreground">mais de 4 anos</strong> de Leadfy mensal. E com o vitalício? Você nunca mais investe um centavo.
+              💡 <strong className="text-foreground">Pense assim:</strong> um único app vendido por R$ 2.000 já paga <strong className="text-foreground">mais de 4 anos</strong> de Leadfy mensal. Com o vitalício? Você nunca mais investe um centavo.
             </p>
           </div>
         </AnimatedSection>

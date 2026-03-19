@@ -6,7 +6,7 @@ const steps = [
     num: "01",
     icon: Search,
     title: "Escolha um nicho que paga caro",
-    desc: "O Leadfy revela nichos com empresas desesperadas por um app. Nichos onde você cobra R$ 2K a R$ 10K tranquilamente.",
+    desc: "O Leadfy revela nichos com empresas que precisam de um app agora — nichos onde você cobra R$ 2K a R$ 10K sem esforço.",
   },
   {
     num: "02",
@@ -18,19 +18,20 @@ const steps = [
     num: "03",
     icon: MessageSquare,
     title: "Receba mensagens que vendem sozinhas",
-    desc: "Prompts inteligentes criam abordagens personalizadas que fazem o cliente QUERER responder. É quase injusto.",
+    desc: "Abordagens personalizadas por nicho que fazem o cliente QUERER responder. Testadas e otimizadas continuamente.",
   },
   {
     num: "04",
     icon: Rocket,
     title: "Feche e fature toda semana",
-    desc: "Envie, negocie, feche. Repita. Membros do Leadfy fecham 2 a 4 clientes por semana. Quanto você quer ganhar?",
+    desc: "Envie, negocie, feche. Repita. Membros ativos fecham 2 a 4 clientes por semana com o sistema.",
   },
 ];
 
 const StepsSection = () => {
   return (
     <section id="como-funciona" className="section-spacing">
+      <div className="section-gradient-divider -mt-14 mb-0" />
       <div className="container max-w-5xl mx-auto">
         <AnimatedSection>
           <div className="text-center mb-10 md:mb-16">
@@ -39,17 +40,17 @@ const StepsSection = () => {
             </p>
             <h2 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
               Do zero ao primeiro cliente{" "}
-              <span className="gradient-text">em 4 passos ridiculamente simples</span>
+              <span className="gradient-text">em 4 passos</span>
             </h2>
             <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
-              Não precisa de experiência, diploma ou conexões. O Leadfy faz o trabalho pesado por você.
+              Sem experiência, diploma ou conexões. O Leadfy faz o trabalho pesado por você.
             </p>
           </div>
         </AnimatedSection>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
           {steps.map((s, i) => (
-            <AnimatedSection key={i} delay={i * 100}>
+            <AnimatedSection key={i} delay={i * 120}>
               <div className="glass-card p-5 md:p-7 hover-card-glow hover-inner-glow group h-full relative overflow-hidden">
                 <span className="absolute -top-2 -right-2 font-display text-[4rem] md:text-[5rem] font-extrabold text-primary/[0.04] leading-none select-none pointer-events-none group-hover:text-primary/[0.08] transition-colors duration-500">
                   {s.num}
