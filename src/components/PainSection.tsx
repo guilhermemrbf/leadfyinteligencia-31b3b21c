@@ -25,7 +25,7 @@ const PainSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
           {pains.map((pain, i) => (
-            <AnimatedSection key={i} delay={i * 100}>
+            <AnimatedSection key={i} delay={i * 100} animation={i % 2 === 0 ? "slide-right" : "slide-left"}>
               <div className="glass-card p-4 md:p-5 text-left flex items-start gap-3 h-full hover-card-glow group border-destructive/10 hover:border-destructive/25">
                 <XCircle className="w-5 h-5 text-destructive mt-0.5 shrink-0" />
                 <p className="text-foreground/90 text-sm">{pain}</p>
