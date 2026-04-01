@@ -95,7 +95,7 @@ const PricingSection = () => {
           </AnimatedSection>
 
           <AnimatedSection delay={150} className="flex">
-            <div className="glass-card p-6 md:p-8 hover-card-glow group relative overflow-hidden flex flex-col w-full">
+            <div className="glass-card p-6 md:p-8 hover-card-glow group relative overflow-visible flex flex-col w-full">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
                 <span className="bg-accent/20 text-accent text-xs font-bold px-4 py-1 rounded-full flex items-center gap-1 border border-accent/30 whitespace-nowrap">
                   💰 Melhor Custo-Benefício
