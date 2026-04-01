@@ -34,7 +34,7 @@ const SolutionSection = () => {
           </p>
         </AnimatedSection>
 
-        <AnimatedSection delay={100}>
+        <AnimatedSection delay={100} animation="scale-up">
           <div className="relative mx-auto max-w-4xl mb-8 md:mb-12 img-zoom-container">
             <div className="absolute inset-0 bg-primary/5 rounded-xl md:rounded-2xl blur-3xl scale-105" />
             <img
