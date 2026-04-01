@@ -2,12 +2,10 @@ import { XCircle } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 const pains = [
-  "Você vê outros faturando R$ 5K, R$ 10K, R$ 20K por mês com apps — e continua parado, só assistindo.",
-  "Tentou aprender a programar, mas desistiu porque parecia impossível. Spoiler: você NÃO precisa programar.",
-  "Não sabe que tipo de app criar, qual nicho atacar, nem quanto cobrar. Resultado? Paralisia total.",
-  "Tenta abordar empresas, mas trava. Não sabe o que dizer. Manda mensagem genérica. Ninguém responde.",
-  "Depende de sorte, indicação ou anúncios caros que queimam seu dinheiro sem retorno.",
-  "Cada mês que passa, você perde milhares de reais em oportunidades que NUNCA vão voltar.",
+  "Vê outros faturando R$ 10K/mês com apps — e continua parado.",
+  "Não sabe programar e acha que isso te impede de começar.",
+  "Não sabe qual nicho atacar, o que oferecer ou quanto cobrar.",
+  "Aborda empresas sem método. Manda mensagem genérica. Zero respostas.",
 ];
 
 const PainSection = () => {
@@ -16,40 +14,25 @@ const PainSection = () => {
       <div className="section-gradient-divider -mt-14 mb-0" />
       <div className="container max-w-4xl mx-auto text-center">
         <AnimatedSection>
-          <p className="text-destructive font-bold mb-3 uppercase tracking-wider text-xs md:text-sm">
-            ⚠️ Atenção
-          </p>
-          <h2 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold mb-5 md:mb-6">
-            Se você se identifica com isso,{" "}
-            <span className="text-destructive">está perdendo dinheiro agora.</span>
+          <h2 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
+            Se isso parece com você,{" "}
+            <span className="text-destructive">o Leadfy resolve.</span>
           </h2>
-          <p className="text-muted-foreground text-base md:text-lg mb-10 md:mb-12 max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-sm md:text-base mb-8 md:mb-10 max-w-xl mx-auto">
             O problema não é falta de talento — é falta de <strong className="text-foreground">método</strong>.
-            Sem método, até gênio fica sem cliente.
           </p>
         </AnimatedSection>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
           {pains.map((pain, i) => (
-            <AnimatedSection key={i} delay={i * 120}>
-              <div className="glass-card p-5 md:p-6 text-left flex items-start gap-3 md:gap-4 h-full hover-card-glow hover-inner-glow group border-destructive/10 hover:border-destructive/30">
-                <XCircle className="w-5 h-5 text-destructive mt-0.5 shrink-0 group-hover:scale-110 transition-transform duration-300" />
-                <p className="text-foreground/90 text-sm md:text-base">{pain}</p>
+            <AnimatedSection key={i} delay={i * 100}>
+              <div className="glass-card p-4 md:p-5 text-left flex items-start gap-3 h-full hover-card-glow group border-destructive/10 hover:border-destructive/25">
+                <XCircle className="w-5 h-5 text-destructive mt-0.5 shrink-0" />
+                <p className="text-foreground/90 text-sm">{pain}</p>
               </div>
             </AnimatedSection>
           ))}
         </div>
-
-        <AnimatedSection delay={700}>
-          <div className="mt-10 md:mt-14 glass-card p-6 md:p-8 border-primary/30 text-center">
-            <p className="text-lg md:text-xl font-bold mb-2">
-              A boa notícia? <span className="gradient-text">Isso acaba HOJE.</span>
-            </p>
-            <p className="text-muted-foreground text-sm md:text-base">
-              O Leadfy resolve cada um desses problemas — e transforma qualquer pessoa em vendedor de apps lucrativo.
-            </p>
-          </div>
-        </AnimatedSection>
       </div>
     </section>
   );

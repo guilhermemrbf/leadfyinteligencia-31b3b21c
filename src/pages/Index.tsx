@@ -1,12 +1,9 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import OpportunitySection from "@/components/OpportunitySection";
 import PainSection from "@/components/PainSection";
 import SolutionSection from "@/components/SolutionSection";
-import StepsSection from "@/components/StepsSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import ModulesCarousel from "@/components/ModulesCarousel";
-import StatsSection from "@/components/StatsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import BonusSection from "@/components/BonusSection";
 import PricingSection from "@/components/PricingSection";
@@ -20,13 +17,10 @@ const Index = () => {
       <SocialProofPopup />
       <Navbar />
       <HeroSection />
-      <OpportunitySection />
       <PainSection />
       <SolutionSection />
-      <StepsSection />
       <FeaturesSection />
       <ModulesCarousel />
-      <StatsSection />
       <TestimonialsSection />
       <BonusSection />
       <PricingSection />

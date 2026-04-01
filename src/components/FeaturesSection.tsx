@@ -1,60 +1,32 @@
 import {
-  Brain,
-  Search,
-  Users,
-  BookOpen,
-  Zap,
-  BarChart3,
-  MessageSquareText,
-  Globe,
-  ArrowRight,
+  Brain, Search, Users, BookOpen, Zap, BarChart3, MessageSquareText, Globe, ArrowRight,
 } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
-const features = [
+const mainFeatures = [
   {
     icon: Brain,
-    title: "IA Integrada da Leadfy",
-    desc: "Cria apps completos, gera abordagens e otimiza suas vendas — tudo automaticamente, sem você digitar código.",
-    highlight: true,
+    title: "IA Integrada",
+    desc: "Cria apps completos e gera abordagens automaticamente.",
   },
   {
     icon: Search,
-    title: "Prospector #1 do Mercado",
-    desc: "Encontra leads qualificados todos os dias — empresas que PRECISAM de um app e estão prontas para pagar agora.",
-    highlight: true,
+    title: "Prospector #1",
+    desc: "Encontra leads qualificados todos os dias no automático.",
   },
   {
     icon: Users,
-    title: "Área de Membros Completa",
-    desc: "Módulos, aulas, templates e comunidade exclusiva. Tudo organizado para você evoluir rápido e faturar consistente.",
-    highlight: true,
+    title: "Área de Membros",
+    desc: "Módulos, templates e comunidade para evoluir rápido.",
   },
-  {
-    icon: MessageSquareText,
-    title: "Abordagens por Nicho",
-    desc: "Copy personalizada por segmento que faz o cliente querer responder na hora.",
-  },
-  {
-    icon: BookOpen,
-    title: "Método Passo a Passo",
-    desc: "Do zero ao primeiro cliente em 7 dias. Cada etapa clara e objetiva.",
-  },
-  {
-    icon: BarChart3,
-    title: "Painel de Gestão",
-    desc: "Dashboard para acompanhar leads, clientes e faturamento em tempo real.",
-  },
-  {
-    icon: Zap,
-    title: "Automações Inteligentes",
-    desc: "Prospecção e follow-up no automático. Você foca em fechar.",
-  },
-  {
-    icon: Globe,
-    title: "Domínio e Marca Própria",
-    desc: "Apps com sua marca, sem marca d'água. Domínio personalizado incluso.",
-  },
+];
+
+const extraFeatures = [
+  { icon: MessageSquareText, label: "Abordagens por nicho" },
+  { icon: BookOpen, label: "Método passo a passo" },
+  { icon: BarChart3, label: "Painel de gestão" },
+  { icon: Zap, label: "Automações" },
+  { icon: Globe, label: "Domínio próprio" },
 ];
 
 const FeaturesSection = () => {
@@ -63,60 +35,48 @@ const FeaturesSection = () => {
       <div className="section-gradient-divider -mt-14 mb-0" />
       <div className="container max-w-5xl mx-auto">
         <AnimatedSection>
-          <div className="text-center mb-10 md:mb-14">
-            <p className="text-primary font-semibold mb-3 uppercase tracking-wider text-xs md:text-sm">
-              🔥 Tudo Num Só Lugar
-            </p>
-            <h2 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
-              A plataforma <span className="gradient-text">mais completa</span> do Brasil
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold mb-3">
+              Tudo que você precisa. <span className="gradient-text">Num só lugar.</span>
             </h2>
-            <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
-              IA própria, prospector inteligente, área de membros e método validado — nenhum concorrente entrega tudo isso.
+            <p className="text-muted-foreground text-sm md:text-base max-w-xl mx-auto">
+              IA, prospector, área de membros e método validado — nenhum concorrente entrega isso junto.
             </p>
           </div>
         </AnimatedSection>
 
-        {/* Top 3 highlighted features */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-5 mb-4 md:mb-5">
-          {features.filter(f => f.highlight).map((f, i) => (
-            <AnimatedSection key={i} delay={i * 120}>
-              <div className="glass-card p-5 md:p-6 text-center hover-card-glow hover-inner-glow group h-full border-primary/20">
-                <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-primary/15 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/25 group-hover:shadow-[0_0_20px_hsl(199_75%_48%/0.3)] transition-all duration-300">
-                  <f.icon className="w-6 h-6 md:w-7 md:h-7 text-primary group-hover:scale-110 transition-transform duration-300" />
+          {mainFeatures.map((f, i) => (
+            <AnimatedSection key={i} delay={i * 100}>
+              <div className="glass-card p-5 md:p-6 text-center hover-card-glow group h-full border-primary/20">
+                <div className="w-12 h-12 rounded-2xl bg-primary/15 flex items-center justify-center mx-auto mb-3 group-hover:bg-primary/25 transition-all duration-300">
+                  <f.icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-display text-base md:text-lg font-bold mb-2 group-hover:text-primary transition-colors duration-300">
-                  {f.title}
-                </h3>
+                <h3 className="font-display text-base md:text-lg font-bold mb-1.5 group-hover:text-primary transition-colors duration-300">{f.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{f.desc}</p>
               </div>
             </AnimatedSection>
           ))}
         </div>
 
-        {/* Remaining features - compact grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 md:gap-4">
-          {features.filter(f => !f.highlight).map((f, i) => (
-            <AnimatedSection key={i} delay={360 + i * 120}>
-              <div className="glass-card p-4 md:p-5 hover-card-glow group h-full">
-                <div className="flex items-center gap-3 mb-2">
-                  <f.icon className="w-4 h-4 text-primary shrink-0" />
-                  <h3 className="font-semibold text-sm group-hover:text-primary transition-colors duration-300">
-                    {f.title}
-                  </h3>
-                </div>
-                <p className="text-muted-foreground text-xs leading-relaxed">{f.desc}</p>
-              </div>
-            </AnimatedSection>
-          ))}
-        </div>
+        <AnimatedSection delay={300}>
+          <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
+            {extraFeatures.map((f, i) => (
+              <span key={i} className="inline-flex items-center gap-2 glass-card px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <f.icon className="w-4 h-4 text-primary" />
+                {f.label}
+              </span>
+            ))}
+          </div>
+        </AnimatedSection>
 
-        <AnimatedSection delay={800}>
-          <div className="mt-10 md:mt-12 text-center">
+        <AnimatedSection delay={400}>
+          <div className="mt-8 md:mt-10 text-center">
             <a
               href="#preco"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold text-base px-8 py-4 rounded-xl glow-primary btn-shimmer hover:brightness-110 active:scale-[0.98] transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold text-base px-8 py-4 rounded-xl glow-primary btn-shimmer active:scale-[0.98] transition-all duration-300"
             >
-              QUERO ACESSO A TUDO ISSO
+              QUERO ACESSO A TUDO
               <ArrowRight className="w-5 h-5" />
             </a>
           </div>

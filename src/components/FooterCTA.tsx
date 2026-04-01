@@ -1,4 +1,4 @@
-import { ArrowRight, Flame } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 import LeadfyLogo from "./LeadfyLogo";
 
@@ -6,43 +6,34 @@ const FooterCTA = () => {
   return (
     <section className="section-spacing">
       <AnimatedSection>
-        <div className="container max-w-4xl mx-auto">
-          <div className="glass-card p-10 md:p-16 text-center relative overflow-hidden border-primary/30">
-            {/* Background glow */}
+        <div className="container max-w-3xl mx-auto">
+          <div className="glass-card p-8 md:p-14 text-center relative overflow-hidden border-primary/30">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[300px] bg-primary/8 rounded-full blur-[100px] pointer-events-none" />
 
             <div className="relative z-10">
-              <div className="inline-flex items-center gap-2 border border-destructive/40 bg-destructive/10 px-4 py-1.5 rounded-full mb-6">
-                <Flame className="w-3.5 h-3.5 text-destructive animate-pulse" />
-                <span className="text-xs text-destructive font-bold">ÚLTIMA CHANCE</span>
-              </div>
-
-              <h2 className="font-display text-3xl md:text-5xl font-bold mb-4 leading-tight">
-                Cada semana sem estratégia é{" "}
-                <span className="gradient-text">receita que fica na mesa.</span>
+              <h2 className="font-display text-2xl md:text-4xl font-bold mb-3 leading-tight">
+                Cada semana sem ação é{" "}
+                <span className="gradient-text">dinheiro na mesa.</span>
               </h2>
-              <p className="text-foreground text-lg font-semibold mb-2 max-w-xl mx-auto">
-                Converse com quem já fatura. 30 minutos que podem mudar o resultado do seu mês.
-              </p>
-              <p className="text-muted-foreground text-sm mb-8 max-w-md mx-auto">
-                Risco zero: garantia de 7 dias. Não gostou? 100% do dinheiro de volta — sem perguntas.
+              <p className="text-muted-foreground text-sm mb-6 max-w-md mx-auto">
+                Garantia de 7 dias. Não gostou? 100% de volta — sem perguntas.
               </p>
               <a
                 href="#preco"
-                className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold text-lg px-10 py-4 rounded-xl glow-primary btn-shimmer hover:brightness-110 active:scale-[0.98] transition-all duration-300 animate-glow-pulse"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold text-lg px-10 py-4 rounded-xl glow-primary btn-shimmer active:scale-[0.98] transition-all duration-300 animate-glow-pulse"
               >
-                🔥 GARANTIR MINHA VAGA AGORA →
+                🔥 GARANTIR MINHA VAGA
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <p className="text-xs text-muted-foreground mt-4">
-                Atendemos um número limitado de pessoas por mês. <strong className="text-foreground">Garanta seu lugar.</strong>
+              <p className="text-xs text-muted-foreground mt-3">
+                Vagas limitadas por mês.
               </p>
             </div>
           </div>
         </div>
       </AnimatedSection>
 
-      <footer className="mt-20 border-t border-border/20 pt-8">
+      <footer className="mt-16 border-t border-border/20 pt-8">
         <div className="container max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-4">
           <LeadfyLogo className="h-7" />
           <p className="text-sm text-muted-foreground">
