@@ -5,79 +5,67 @@ import AnimatedSection from "./AnimatedSection";
 const pillars = [
   {
     icon: Lightbulb,
-    num: "01",
-    title: "Encontramos nichos que pagam caro",
-    desc: "A IA identifica empresas que precisam de um app — nichos onde você cobra R$ 2K a R$ 10K por projeto, sem negociar.",
-    gradient: "from-primary/20 to-primary/5",
+    title: "Encontra os clientes certos",
+    desc: "O prospector identifica empresas que precisam de app e estão prontas para pagar.",
   },
   {
     icon: Rocket,
-    num: "02",
-    title: "Criamos o app em minutos",
-    desc: "Sem uma linha de código. A IA gera apps profissionais que parecem ter custado R$ 50 mil para desenvolver.",
-    gradient: "from-secondary/20 to-secondary/5",
+    title: "Cria o app em minutos",
+    desc: "A IA gera apps profissionais sem código. Seu cliente vai achar que custou R$ 50 mil.",
   },
   {
     icon: MessageSquare,
-    num: "03",
-    title: "Fechamos clientes no automático",
-    desc: "Mensagens de venda prontas e testadas que fazem o cliente QUERER responder. Você só clica em enviar.",
-    gradient: "from-primary/20 to-secondary/5",
+    title: "Fecha no automático",
+    desc: "Mensagens prontas por nicho que fazem o cliente querer responder. Só enviar.",
   },
 ];
 
 const SolutionSection = () => {
   return (
-    <section id="solucao" className="section-spacing">
+    <section id="como-funciona" className="section-spacing">
       <div className="section-gradient-divider -mt-14 mb-0" />
       <div className="container max-w-5xl mx-auto text-center">
         <AnimatedSection>
-          <p className="text-primary font-semibold mb-3 uppercase tracking-wider text-xs md:text-sm">
-            🚀 A Máquina de Fazer Dinheiro
-          </p>
           <h2 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
-            3 passos simples. <span className="gradient-text">Resultado inevitável.</span>
+            3 passos. <span className="gradient-text">Resultado garantido.</span>
           </h2>
-          <p className="text-muted-foreground text-base md:text-lg mb-10 md:mb-12 max-w-2xl mx-auto">
-            A <strong className="text-foreground">única plataforma no Brasil</strong> que leva do zero ao primeiro cliente pagante — IA, prospecção e vendas num só lugar.
+          <p className="text-muted-foreground text-sm md:text-base mb-8 md:mb-10 max-w-xl mx-auto">
+            A única plataforma que leva do zero ao primeiro cliente — IA, prospecção e vendas num só lugar.
           </p>
         </AnimatedSection>
 
         <AnimatedSection delay={100}>
-          <div className="relative mx-auto max-w-4xl mb-12 md:mb-16 img-zoom-container">
+          <div className="relative mx-auto max-w-4xl mb-8 md:mb-12 img-zoom-container">
             <div className="absolute inset-0 bg-primary/5 rounded-xl md:rounded-2xl blur-3xl scale-105" />
             <img
               src={productImg}
-              alt="Leadfy Inteligência — plataforma desktop e mobile"
+              alt="Leadfy — plataforma desktop e mobile"
               className="relative rounded-xl md:rounded-2xl border border-border/20 shadow-2xl w-full"
             />
           </div>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-5">
           {pillars.map((p, i) => (
-            <AnimatedSection key={i} delay={i * 120}>
-              <div className="glass-card p-6 md:p-8 text-center hover-card-glow hover-inner-glow group h-full relative overflow-hidden">
-                <span className="absolute -top-2 -right-2 font-display text-[4rem] md:text-[5rem] font-extrabold text-primary/[0.04] leading-none select-none pointer-events-none group-hover:text-primary/[0.08] transition-colors duration-500">
-                  {p.num}
-                </span>
-                <div className={`w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-gradient-to-br ${p.gradient} flex items-center justify-center mx-auto mb-5 md:mb-6 group-hover:shadow-[0_0_20px_hsl(199_75%_48%/0.25)] transition-all duration-300`}>
-                  <p.icon className="w-6 h-6 md:w-7 md:h-7 text-primary group-hover:scale-110 transition-transform duration-300" />
+            <AnimatedSection key={i} delay={i * 100}>
+              <div className="glass-card p-5 md:p-6 text-center hover-card-glow group h-full">
+                <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-all duration-300">
+                  <p.icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-display text-lg md:text-xl font-bold mb-2 md:mb-3 group-hover:text-primary transition-colors duration-300">{p.title}</h3>
+                <h3 className="font-display text-base md:text-lg font-bold mb-2 group-hover:text-primary transition-colors duration-300">{p.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{p.desc}</p>
               </div>
             </AnimatedSection>
           ))}
         </div>
 
-        <AnimatedSection delay={500}>
-          <div className="mt-10 md:mt-14">
+        <AnimatedSection delay={400}>
+          <div className="mt-8 md:mt-10">
             <a
               href="#preco"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold text-base md:text-lg px-8 py-4 rounded-xl glow-primary btn-shimmer hover:brightness-110 active:scale-[0.98] transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold text-base px-8 py-4 rounded-xl glow-primary btn-shimmer active:scale-[0.98] transition-all duration-300"
             >
-              QUERO COMEÇAR A FATURAR AGORA
+              QUERO COMEÇAR
               <ArrowRight className="w-5 h-5" />
             </a>
           </div>

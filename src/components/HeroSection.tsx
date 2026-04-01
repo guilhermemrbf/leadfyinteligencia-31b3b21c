@@ -1,107 +1,63 @@
-import { ArrowRight, Play, Shield, Zap, Users, Clock, Flame } from "lucide-react";
+import { ArrowRight, Shield, Zap, Users, Clock } from "lucide-react";
 import heroMockup from "@/assets/leadfy-hero-mockup.png";
 import AICodeAnimation from "./AICodeAnimation";
-
-const tabs = ["Dashboard", "Prospecção", "Prompts", "Contatos", "Assistente"];
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-[100svh] flex flex-col items-center justify-center px-4 py-20 pt-24 md:pt-32 overflow-hidden">
-      {/* Animated gradient background */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] md:w-[900px] h-[400px] md:h-[600px] rounded-full pointer-events-none hero-gradient-animated"
         style={{ background: "radial-gradient(ellipse at center, hsl(199 75% 48% / 0.12), hsl(196 85% 58% / 0.06), transparent 70%)" }}
       />
 
       <div className="container max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-8 md:mb-16">
-          {/* Urgency badge */}
-          <div className="inline-flex items-center gap-2 border border-destructive/40 bg-destructive/10 backdrop-blur-sm px-3 py-1 md:px-5 md:py-2 rounded-full mb-3 md:mb-4 animate-fade-up">
-            <Flame className="w-3 h-3 md:w-3.5 md:h-3.5 text-destructive animate-pulse" />
-            <span className="text-[10px] md:text-sm text-destructive font-bold">VAGAS LIMITADAS — Pode sair do ar a qualquer momento</span>
-          </div>
-
-          {/* Social proof badge */}
-          <div className="inline-flex items-center gap-2 border border-primary/30 bg-primary/5 backdrop-blur-sm px-3 py-1 md:px-5 md:py-2 rounded-full mb-6 md:mb-10 animate-fade-up" style={{ animationDelay: "50ms" }}>
+          <div className="inline-flex items-center gap-2 border border-primary/30 bg-primary/5 backdrop-blur-sm px-3 py-1 md:px-5 md:py-2 rounded-full mb-6 md:mb-10 animate-fade-up">
             <Users className="w-3 h-3 md:w-3.5 md:h-3.5 text-primary" />
-            <span className="text-[10px] md:text-sm text-primary font-medium">+500 pessoas já faturam com apps nos últimos 12 meses</span>
+            <span className="text-[10px] md:text-sm text-primary font-medium">+500 pessoas já faturam com apps</span>
           </div>
 
           <h1 className="font-display text-[1.6rem] sm:text-3xl md:text-6xl lg:text-[4.5rem] font-extrabold leading-[1.1] mb-4 md:mb-7 max-w-5xl mx-auto animate-fade-up" style={{ animationDelay: "100ms" }}>
-            R$ 10K/mês vendendo apps{" "}
-            <span className="gradient-text">para quem cansou de esperar resultados</span>
+            Fature R$ 10K/mês vendendo apps{" "}
+            <span className="gradient-text">sem programar uma linha</span>
           </h1>
 
-          <p className="text-sm md:text-xl text-muted-foreground max-w-2xl mx-auto mb-3 md:mb-4 leading-relaxed animate-fade-up" style={{ animationDelay: "150ms" }}>
-            Sem programar. Sem experiência. O Leadfy entrega o app pronto, os clientes certos e as mensagens que vendem. <strong className="text-foreground">Você só clica em "enviar".</strong>
+          <p className="text-sm md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 md:mb-10 leading-relaxed animate-fade-up" style={{ animationDelay: "150ms" }}>
+            O Leadfy cria o app, encontra o cliente e entrega a mensagem pronta. <strong className="text-foreground">Você só clica em enviar.</strong>
           </p>
 
-          <p className="text-xs md:text-base text-destructive font-semibold mb-6 md:mb-10 animate-fade-up" style={{ animationDelay: "200ms" }}>
-            ⚠️ Cada dia sem o Leadfy é dinheiro que fica na mesa.
-          </p>
-
-          {/* CTA */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4 mb-4 md:mb-6 animate-fade-up" style={{ animationDelay: "300ms" }}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4 mb-4 md:mb-6 animate-fade-up" style={{ animationDelay: "250ms" }}>
             <a
               href="#preco"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-bold text-sm md:text-lg px-6 md:px-8 py-3 md:py-4 rounded-xl glow-primary btn-shimmer animate-glow-pulse"
             >
-              🔥 QUERO FATURAR COM APPS AGORA
+              COMEÇAR AGORA
               <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
             </a>
             <a
               href="#como-funciona"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-border/60 bg-muted/20 backdrop-blur-sm text-foreground font-semibold text-sm md:text-lg px-6 md:px-8 py-3 md:py-4 rounded-xl hover:bg-muted/40 active:scale-[0.98] transition-all duration-300"
             >
-              <Play className="w-4 h-4 md:w-5 md:h-5" />
               Ver como funciona
             </a>
           </div>
 
-          {/* Trust badges */}
-          <div className="flex flex-wrap items-center justify-center gap-3 md:gap-6 text-[0.6rem] md:text-xs text-muted-foreground uppercase tracking-wider animate-fade-up" style={{ animationDelay: "350ms" }}>
-            <span className="flex items-center gap-1">
-              <Zap className="w-3 h-3" />
-              Sem experiência
-            </span>
+          <div className="flex flex-wrap items-center justify-center gap-3 md:gap-6 text-[0.6rem] md:text-xs text-muted-foreground uppercase tracking-wider animate-fade-up" style={{ animationDelay: "300ms" }}>
+            <span className="flex items-center gap-1"><Zap className="w-3 h-3" /> Sem experiência</span>
             <span className="text-border hidden sm:inline">•</span>
-            <span className="flex items-center gap-1">
-              <Shield className="w-3 h-3" />
-              Garantia 7 dias
-            </span>
+            <span className="flex items-center gap-1"><Shield className="w-3 h-3" /> Garantia 7 dias</span>
             <span className="text-border hidden sm:inline">•</span>
-            <span className="flex items-center gap-1">
-              <Clock className="w-3 h-3" />
-              Resultados em 7 dias
-            </span>
+            <span className="flex items-center gap-1"><Clock className="w-3 h-3" /> Resultados em 7 dias</span>
           </div>
         </div>
 
-        {/* Two-column: Product + AI Code */}
-        <div className="relative mx-auto max-w-6xl animate-fade-up" style={{ animationDelay: "400ms" }}>
+        <div className="relative mx-auto max-w-6xl animate-fade-up" style={{ animationDelay: "350ms" }}>
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 md:gap-6 items-start">
-            {/* Product showcase */}
             <div className="lg:col-span-3 order-2 lg:order-1">
-              {/* Tabs - hidden on small mobile */}
-              <div className="hidden sm:flex items-center justify-start md:justify-center gap-2 mb-4 md:mb-6 overflow-x-auto pb-2 scrollbar-none -mx-2 px-2">
-                {tabs.map((tab, i) => (
-                  <span
-                    key={tab}
-                    className={`text-xs font-medium px-3 md:px-4 py-1.5 md:py-2 rounded-lg transition-all duration-200 whitespace-nowrap shrink-0 ${
-                      i === 0
-                        ? "bg-primary/15 text-primary border border-primary/30"
-                        : "text-muted-foreground hover:text-foreground hover:bg-muted/30 border border-transparent"
-                    }`}
-                  >
-                    {tab}
-                  </span>
-                ))}
-              </div>
-
               <div className="relative img-zoom-container">
                 <div className="absolute inset-0 bg-primary/5 rounded-xl blur-2xl scale-105" />
                 <img
                   src={heroMockup}
-                  alt="Leadfy Inteligência — plataforma de prospecção e abordagens para vendedores de apps"
+                  alt="Leadfy — plataforma de prospecção e venda de apps"
                   className="relative rounded-xl md:rounded-2xl border border-border/20 shadow-2xl w-full"
                   loading="eager"
                 />
@@ -109,10 +65,9 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* AI Code Animation */}
             <div className="lg:col-span-2 order-1 lg:order-2">
               <p className="text-[10px] md:text-xs text-primary font-semibold uppercase tracking-wider mb-2 md:mb-3 text-center lg:text-left">
-                🤖 Veja a IA criando um app em tempo real
+                🤖 IA criando um app em tempo real
               </p>
               <AICodeAnimation />
               <div className="mt-3 md:mt-4 glass-card p-3 md:p-4 border-primary/20">
