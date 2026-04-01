@@ -47,7 +47,7 @@ const PricingSection = () => {
                 <span className="text-muted-foreground line-through text-lg">R$ 97/mês</span>
               </div>
               <div className="mb-5 md:mb-6">
-                <span className="font-display text-4xl md:text-5xl font-extrabold">R$ 39</span>
+                <span className="font-display text-4xl md:text-5xl font-extrabold">R$ 49</span>
                 <span className="text-xl md:text-2xl font-bold text-muted-foreground">,99</span>
                 <span className="text-muted-foreground">/mês</span>
               </div>
