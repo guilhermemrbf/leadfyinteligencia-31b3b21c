@@ -64,6 +64,7 @@
 
   .glass-card {
     @apply bg-card/40 backdrop-blur-xl border border-border/50 rounded-xl;
+    transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .gradient-bg {
@@ -82,17 +83,19 @@
     @apply border-t border-border/20;
   }
 
-  /* Card hover effect */
+  /* Card hover — elegant lift + glow */
   .hover-card-glow {
-    @apply transition-all duration-300 ease-out;
+    @apply transition-all ease-out;
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .hover-card-glow:hover {
-    transform: translateY(-6px);
+    transform: translateY(-5px);
     box-shadow:
-      0 0 20px hsl(199 75% 48% / 0.1),
-      0 12px 28px hsl(199 75% 48% / 0.08);
-    border-color: hsl(199 75% 48% / 0.25);
+      0 0 20px hsl(199 75% 48% / 0.08),
+      0 16px 32px hsl(199 75% 48% / 0.06);
+    border-color: hsl(199 75% 48% / 0.2);
   }
 
   .hover-inner-glow {
@@ -108,20 +111,20 @@
     right: 0;
     height: 1px;
     background: linear-gradient(90deg, transparent, hsl(199 75% 48% / 0), transparent);
-    transition: all 0.4s ease;
+    transition: all 0.5s ease;
   }
 
   .hover-inner-glow:hover::before {
-    background: linear-gradient(90deg, transparent, hsl(199 75% 48% / 0.4), transparent);
+    background: linear-gradient(90deg, transparent, hsl(199 75% 48% / 0.35), transparent);
   }
 
   /* Image hover zoom */
   .img-zoom-container {
-    @apply overflow-hidden;
+    @apply overflow-hidden rounded-xl;
   }
 
   .img-zoom-container img {
-    @apply transition-transform duration-500 ease-out;
+    @apply transition-transform duration-700 ease-out;
   }
 
   .img-zoom-container:hover img {
@@ -152,39 +155,38 @@ html {
 @media (hover: none) {
   .hover-card-glow:active {
     transform: scale(0.98);
-    transition-duration: 100ms;
+    transition-duration: 150ms;
   }
 }
 
-/* Fade up animation */
+/* Fade up animation — hero entrance */
 @keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(24px) scale(0.98);
+    filter: blur(4px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
+    filter: blur(0);
   }
 }
 
 .animate-fade-up {
-  animation: fade-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 /* CTA shimmer effect */
 @keyframes shimmer {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
 }
 
 .btn-shimmer {
   position: relative;
   overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
 }
 
 .btn-shimmer::after {
@@ -197,26 +199,25 @@ html {
   background: linear-gradient(
     105deg,
     transparent 40%,
-    hsl(0 0% 100% / 0.15) 50%,
+    hsl(0 0% 100% / 0.12) 50%,
     transparent 60%
   );
-  animation: shimmer 3s ease-in-out infinite;
+  animation: shimmer 3.5s ease-in-out infinite;
   pointer-events: none;
 }
 
 .btn-shimmer:hover {
-  transform: scale(1.04);
-  box-shadow: 0 0 40px hsl(199 75% 48% / 0.5), 0 0 80px hsl(199 75% 48% / 0.2);
-  transition: all 0.25s ease;
+  transform: scale(1.03);
+  box-shadow: 0 0 35px hsl(199 75% 48% / 0.45), 0 0 70px hsl(199 75% 48% / 0.15);
 }
 
 /* Glow pulse for CTAs */
 @keyframes glow-pulse {
   0%, 100% {
-    box-shadow: 0 0 20px hsl(199 75% 48% / 0.3), 0 0 40px hsl(199 75% 48% / 0.1);
+    box-shadow: 0 0 20px hsl(199 75% 48% / 0.25), 0 0 40px hsl(199 75% 48% / 0.08);
   }
   50% {
-    box-shadow: 0 0 30px hsl(199 75% 48% / 0.5), 0 0 60px hsl(199 75% 48% / 0.2);
+    box-shadow: 0 0 28px hsl(199 75% 48% / 0.4), 0 0 56px hsl(199 75% 48% / 0.15);
   }
 }
 
@@ -231,20 +232,30 @@ html {
     transform: translate(-50%, -50%) scale(1);
   }
   50% {
-    opacity: 0.7;
-    transform: translate(-45%, -55%) scale(1.1);
+    opacity: 0.65;
+    transform: translate(-46%, -54%) scale(1.08);
   }
 }
 
 .hero-gradient-animated {
-  animation: hero-gradient 8s ease-in-out infinite;
+  animation: hero-gradient 10s ease-in-out infinite;
 }
 
 /* Section gradient divider */
 .section-gradient-divider {
-  height: 60px;
-  background: linear-gradient(to bottom, transparent, hsl(var(--background) / 0.5), transparent);
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, hsl(var(--background) / 0.6), transparent);
   pointer-events: none;
+}
+
+/* Floating subtle glow dot for sections */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
 }
 
 /* Accessibility: disable animations for reduced motion */
@@ -260,6 +271,7 @@ html {
 
   .animate-fade-up,
   .animate-glow-pulse,
+  .animate-float,
   .btn-shimmer::after,
   .hero-gradient-animated {
     animation: none !important;
