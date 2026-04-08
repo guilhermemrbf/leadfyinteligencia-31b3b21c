@@ -111,7 +111,7 @@ const PricingSection = () => {
                   <span className="font-display text-4xl md:text-5xl font-extrabold">R$ 180</span>
                   <span className="text-muted-foreground"> /único</span>
                   <p className="text-base md:text-lg text-muted-foreground mt-2">
-                    ou até <span className="font-bold text-foreground text-lg md:text-xl">12x</span> de <span className="font-bold text-foreground text-lg md:text-xl">R$ 20,82</span>
+                    ou até <span className="font-bold text-foreground text-lg md:text-xl">12x</span> de <span className="font-bold text-foreground text-lg md:text-xl">R$ 18,60</span>
                   </p>
                 </div>
                 <p className="text-xs text-primary font-semibold mb-5">💎 Economia de 70% — nunca mais paga nada</p>
