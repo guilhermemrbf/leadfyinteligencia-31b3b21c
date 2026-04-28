@@ -8,7 +8,7 @@ const actions = [
   "acabou de garantir acesso",
   "fechou o primeiro cliente",
   "entrou para o Leadfy",
-  "garantiu o plano vitalício",
+  "garantiu o plano anual",
 ];
 
 const SocialProofPopup = () => {
