@@ -6,7 +6,7 @@ const bonuses = [
   { name: "Scripts de Venda que Fecham", fake: "R$ 147" },
   { name: "Guia: 1º Cliente em 7 Dias", fake: "R$ 97" },
   { name: "Modelos de Proposta", fake: "R$ 127" },
-  { name: "Atualizações Vitalícias", fake: "R$ 297" },
+  { name: "Atualizações do Ano Inteiro", fake: "R$ 297" },
 ];
 
 const totalFake = bonuses.reduce((acc, b) => acc + parseInt(b.fake.replace(/\D/g, "")), 0);
