@@ -48,11 +48,11 @@ const PricingSection = () => {
                   <span className="text-muted-foreground line-through text-lg">R$ 97/mês</span>
                 </div>
                 <div className="mb-5 md:mb-6">
-                  <span className="font-display text-4xl md:text-5xl font-extrabold">R$ 49</span>
-                  <span className="text-xl md:text-2xl font-bold text-muted-foreground">,99</span>
+                  <span className="font-display text-4xl md:text-5xl font-extrabold">R$ 29</span>
+                  <span className="text-xl md:text-2xl font-bold text-muted-foreground">,90</span>
                   <span className="text-muted-foreground">/mês</span>
                 </div>
-                <p className="text-xs text-primary font-semibold mb-5">🔥 Economia de 49% — só enquanto durar</p>
+                <p className="text-xs text-primary font-semibold mb-5">🔥 Economia de 69% — só enquanto durar</p>
               </div>
 
               <div className="flex items-center justify-center gap-2 mb-5 flex-wrap">
@@ -105,16 +105,16 @@ const PricingSection = () => {
                 <h3 className="font-display text-lg md:text-xl font-bold mb-1 mt-2">Plano Anual</h3>
                 <p className="text-muted-foreground text-sm mb-5 md:mb-6">Pague uma vez e use o ano todo.</p>
                 <div className="mb-2">
-                  <span className="text-muted-foreground line-through text-lg">R$ 497</span>
+                  <span className="text-muted-foreground line-through text-lg">R$ 358,80</span>
                 </div>
                 <div className="mb-5 md:mb-6">
-                  <span className="font-display text-4xl md:text-5xl font-extrabold">R$ 180</span>
+                  <span className="font-display text-4xl md:text-5xl font-extrabold">R$ 80</span>
                   <span className="text-muted-foreground"> /ano</span>
                   <p className="text-base md:text-lg text-muted-foreground mt-2">
-                    ou até <span className="font-bold text-foreground text-lg md:text-xl">12x</span> de <span className="font-bold text-foreground text-lg md:text-xl">R$ 18,60</span>
+                    ou até <span className="font-bold text-foreground text-lg md:text-xl">12x</span> de <span className="font-bold text-foreground text-lg md:text-xl">R$ 6,67</span>
                   </p>
                 </div>
-                <p className="text-xs text-primary font-semibold mb-5">💎 Economia de 70% — 1 ano de acesso completo</p>
+                <p className="text-xs text-primary font-semibold mb-5">💎 Economia de 78% — 1 ano de acesso completo</p>
               </div>
 
               <div className="flex items-center justify-center gap-2 mb-5 flex-wrap">
@@ -163,7 +163,7 @@ const PricingSection = () => {
         <AnimatedSection delay={400}>
           <div className="mt-10 md:mt-14 max-w-2xl mx-auto">
             <p className="text-muted-foreground text-sm md:text-base">
-              💡 <strong className="text-foreground">Pense assim:</strong> um único app vendido por R$ 2.000 já paga <strong className="text-foreground">mais de 10 anos</strong> de Leadfy anual. O retorno vem logo no primeiro cliente.
+              💡 <strong className="text-foreground">Pense assim:</strong> um único app vendido por R$ 2.000 já paga <strong className="text-foreground">mais de 25 anos</strong> de Leadfy anual. O retorno vem logo no primeiro cliente.
             </p>
           </div>
         </AnimatedSection>
