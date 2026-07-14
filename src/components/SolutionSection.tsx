@@ -1,5 +1,4 @@
 import { Lightbulb, Rocket, MessageSquare, ArrowRight } from "lucide-react";
-import productImg from "@/assets/leadfy-product.png";
 import AnimatedSection from "./AnimatedSection";
 
 const pillars = [
