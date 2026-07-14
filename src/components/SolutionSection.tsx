@@ -48,7 +48,7 @@ const SolutionSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-5">
           {pillars.map((p, i) => (
             <AnimatedSection key={i} delay={i * 100}>
-              <div className="glass-card p-5 md:p-6 text-center hover-card-glow group h-full">
+              <div className="glass-card p-5 md:p-6 text-center hover-lift icon-float-on-hover group h-full">
                 <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-all duration-300">
                   <p.icon className="w-6 h-6 text-primary" />
                 </div>
