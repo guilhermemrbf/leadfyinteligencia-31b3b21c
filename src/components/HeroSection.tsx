@@ -1,5 +1,5 @@
 import { ArrowRight, Shield, Zap, Users, Clock } from "lucide-react";
-import heroMockup from "@/assets/leadfy-hero-mockup.png";
+import HeroVisual from "./HeroVisual";
 import AICodeAnimation from "./AICodeAnimation";
 
 const HeroSection = () => {
@@ -65,16 +65,7 @@ const HeroSection = () => {
         <div className="relative mx-auto max-w-6xl animate-fade-up" style={{ animationDelay: "350ms" }}>
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 md:gap-6 items-start">
             <div className="lg:col-span-3 order-2 lg:order-1">
-              <div className="relative img-zoom-container">
-                <div className="absolute inset-0 bg-primary/5 rounded-xl blur-2xl scale-105" />
-                <img
-                  src={heroMockup}
-                  alt="Leadfy — plataforma de prospecção e venda de apps"
-                  className="relative rounded-xl md:rounded-2xl border border-border/20 shadow-2xl w-full"
-                  loading="eager"
-                />
-                <div className="absolute bottom-0 left-0 right-0 h-16 md:h-32 bg-gradient-to-t from-background to-transparent rounded-b-xl md:rounded-b-2xl" />
-              </div>
+              <HeroVisual />
             </div>
 
             <div className="lg:col-span-2 order-1 lg:order-2">

@@ -1,5 +1,4 @@
 import { Lightbulb, Rocket, MessageSquare, ArrowRight } from "lucide-react";
-import productImg from "@/assets/leadfy-product.png";
 import AnimatedSection from "./AnimatedSection";
 
 const pillars = [
@@ -35,13 +34,24 @@ const SolutionSection = () => {
         </AnimatedSection>
 
         <AnimatedSection delay={100} animation="scale-up">
-          <div className="relative mx-auto max-w-4xl mb-8 md:mb-12 img-zoom-container">
-            <div className="absolute inset-0 bg-primary/5 rounded-xl md:rounded-2xl blur-3xl scale-105" />
-            <img
-              src={productImg}
-              alt="Leadfy — plataforma desktop e mobile"
-              className="relative rounded-xl md:rounded-2xl border border-border/20 shadow-2xl w-full"
-            />
+          <div className="relative mx-auto max-w-3xl mb-10 md:mb-14">
+            <div className="absolute inset-0 bg-primary/10 rounded-2xl blur-3xl scale-105" />
+            <div className="relative flex items-center justify-center gap-3 md:gap-4 flex-wrap">
+              {["Prospecta", "Cria o app", "Envia msg", "Fecha venda"].map((step, i) => (
+                <div key={step} className="flex items-center gap-3 md:gap-4">
+                  <div
+                    className="tech-badge animate-fade-up"
+                    style={{ animationDelay: `${i * 150}ms` }}
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+                    {step}
+                  </div>
+                  {i < 3 && (
+                    <div className="w-6 md:w-10 h-px bg-gradient-to-r from-primary/60 to-accent/60" />
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         </AnimatedSection>
 
