@@ -62,7 +62,7 @@ const HeroSection = () => {
                   className="relative rounded-xl md:rounded-2xl border border-border/20 shadow-2xl w-full"
                   loading="eager"
                 />
-                <div className="absolute bottom-0 left-0 right-0 h-16 md:h-32 bg-gradient-to-t from-[hsl(207,58%,11%)] to-transparent rounded-b-xl md:rounded-b-2xl" />
+                <div className="absolute bottom-0 left-0 right-0 h-16 md:h-32 bg-gradient-to-t from-background to-transparent rounded-b-xl md:rounded-b-2xl" />
               </div>
             </div>
 
