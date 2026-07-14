@@ -9,20 +9,20 @@ const LeadfyLogo = ({ className = "h-8" }: { className?: string }) => {
         {/* Inner circle */}
         <circle cx="20" cy="20" r="5" fill="url(#grad3)" />
         {/* Connector line */}
-        <line x1="25" y1="15" x2="34" y2="6" stroke="hsl(199 75% 48%)" strokeWidth="2" strokeLinecap="round" />
-        <circle cx="35" cy="5" r="2" fill="hsl(196 85% 58%)" />
+        <line x1="25" y1="15" x2="34" y2="6" stroke="hsl(243 76% 62%)" strokeWidth="2" strokeLinecap="round" />
+        <circle cx="35" cy="5" r="2" fill="hsl(258 82% 66%)" />
         <defs>
           <linearGradient id="grad1" x1="0" y1="0" x2="40" y2="40">
-            <stop offset="0%" stopColor="hsl(199 75% 48%)" />
-            <stop offset="100%" stopColor="hsl(196 85% 58%)" />
+            <stop offset="0%" stopColor="hsl(243 76% 62%)" />
+            <stop offset="100%" stopColor="hsl(258 82% 66%)" />
           </linearGradient>
           <linearGradient id="grad2" x1="10" y1="10" x2="30" y2="30">
-            <stop offset="0%" stopColor="hsl(196 85% 58%)" />
-            <stop offset="100%" stopColor="hsl(199 75% 48%)" />
+            <stop offset="0%" stopColor="hsl(258 82% 66%)" />
+            <stop offset="100%" stopColor="hsl(243 76% 62%)" />
           </linearGradient>
           <linearGradient id="grad3" x1="15" y1="15" x2="25" y2="25">
-            <stop offset="0%" stopColor="hsl(199 75% 48%)" />
-            <stop offset="100%" stopColor="hsl(196 85% 58%)" />
+            <stop offset="0%" stopColor="hsl(243 76% 62%)" />
+            <stop offset="100%" stopColor="hsl(258 82% 66%)" />
           </linearGradient>
         </defs>
       </svg>
