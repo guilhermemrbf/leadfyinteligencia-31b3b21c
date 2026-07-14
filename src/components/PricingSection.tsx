@@ -35,7 +35,7 @@ const PricingSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 max-w-3xl mx-auto items-stretch">
           <AnimatedSection delay={0} className="flex">
-            <div className="glass-card p-6 md:p-8 relative border-primary/50 hover-card-glow group flex flex-col w-full" style={{ boxShadow: "0 0 15px hsl(199 75% 48% / 0.15), 0 0 30px hsl(199 75% 48% / 0.08)" }}>
+            <div className="glass-card border-beam p-6 md:p-8 relative border-primary/50 hover-lift group flex flex-col w-full" style={{ boxShadow: "0 0 15px hsl(243 76% 62% / 0.18), 0 0 30px hsl(258 82% 66% / 0.10)" }}>
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
                 <span className="bg-primary text-primary-foreground text-xs font-bold px-4 py-1 rounded-full flex items-center gap-1 shadow-lg whitespace-nowrap">
                   <Flame className="w-3 h-3" /> Mais Escolhido
@@ -81,10 +81,10 @@ const PricingSection = () => {
                   href="https://syncpay.link/hWuBJs"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex w-full items-center justify-center gap-2 bg-primary text-primary-foreground font-bold py-3.5 md:py-4 rounded-xl text-center glow-primary btn-shimmer active:scale-[0.98] transition-all duration-300 text-base"
+                  className="flex w-full items-center justify-center gap-2 cta-cosmic font-bold py-3.5 md:py-4 rounded-xl text-center btn-shimmer active:scale-[0.98] transition-all duration-300 text-base group"
                 >
                   🔥 GARANTIR MINHA VAGA AGORA
-                  <ArrowRight className="w-4 h-4" />
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <div className="flex items-center justify-center gap-2 mt-3">
                   <Shield className="w-3 h-3 text-muted-foreground" />
@@ -95,7 +95,7 @@ const PricingSection = () => {
           </AnimatedSection>
 
           <AnimatedSection delay={150} className="flex">
-            <div className="glass-card p-6 md:p-8 hover-card-glow group relative overflow-visible flex flex-col w-full">
+            <div className="glass-card p-6 md:p-8 hover-lift group relative overflow-visible flex flex-col w-full">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
                 <span className="bg-accent/20 text-accent text-xs font-bold px-4 py-1 rounded-full flex items-center gap-1 border border-accent/30 whitespace-nowrap">
                   💰 Melhor Custo-Benefício

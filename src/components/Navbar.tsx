@@ -48,7 +48,7 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           <a
             href="#preco"
-            className="hidden sm:inline-flex bg-primary text-primary-foreground font-semibold text-sm px-5 py-2.5 rounded-xl hover:brightness-110 transition-all duration-300 animate-fade-up"
+            className="hidden sm:inline-flex cta-cosmic font-semibold text-sm px-5 py-2.5 rounded-xl hover:brightness-110 transition-all duration-300 animate-fade-up btn-shimmer"
             style={{ animationDelay: "400ms" }}
           >
             Começar agora
@@ -78,7 +78,7 @@ const Navbar = () => {
           <a
             href="#preco"
             onClick={() => setOpen(false)}
-            className="block text-center bg-primary text-primary-foreground font-semibold text-sm px-5 py-3 rounded-xl mt-2"
+            className="block text-center cta-cosmic font-semibold text-sm px-5 py-3 rounded-xl mt-2"
           >
             Começar agora
           </a>

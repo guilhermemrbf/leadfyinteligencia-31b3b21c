@@ -61,7 +61,7 @@ const TestimonialsSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
           {testimonials.map((t, i) => (
             <AnimatedSection key={i} delay={100 + i * 100}>
-              <div className="glass-card p-5 md:p-6 hover-card-glow group relative h-full">
+              <div className="glass-card p-5 md:p-6 hover-lift group relative h-full">
                 <Quote className="absolute top-4 right-4 w-6 h-6 text-primary/10" />
                 <div className="flex gap-0.5 mb-3">
                   {Array.from({ length: 5 }).map((_, j) => (
