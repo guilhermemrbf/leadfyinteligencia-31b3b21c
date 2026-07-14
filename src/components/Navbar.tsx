@@ -78,7 +78,7 @@ const Navbar = () => {
           <a
             href="#preco"
             onClick={() => setOpen(false)}
-            className="block text-center bg-primary text-primary-foreground font-semibold text-sm px-5 py-3 rounded-xl mt-2"
+            className="block text-center cta-cosmic font-semibold text-sm px-5 py-3 rounded-xl mt-2"
           >
             Começar agora
           </a>
