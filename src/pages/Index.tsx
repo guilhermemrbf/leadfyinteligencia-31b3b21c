@@ -27,6 +27,7 @@ const Index = () => {
       <PricingSection />
       <FAQSection />
       <FooterCTA />
+      <StickyMobileCTA />
     </div>
   );
 };
