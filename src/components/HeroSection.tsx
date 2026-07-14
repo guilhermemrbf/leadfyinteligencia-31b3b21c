@@ -1,5 +1,5 @@
 import { ArrowRight, Shield, Zap, Users, Clock } from "lucide-react";
-import heroMockup from "@/assets/leadfy-hero-mockup.png";
+import HeroVisual from "./HeroVisual";
 import AICodeAnimation from "./AICodeAnimation";
 
 const HeroSection = () => {
