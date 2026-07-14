@@ -5,8 +5,9 @@ import AICodeAnimation from "./AICodeAnimation";
 const HeroSection = () => {
   return (
     <section className="relative min-h-[100svh] flex flex-col items-center justify-center px-4 py-20 pt-24 md:pt-32 overflow-hidden">
+      <div className="absolute inset-0 hero-grid-bg pointer-events-none" />
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] md:w-[900px] h-[400px] md:h-[600px] rounded-full pointer-events-none hero-gradient-animated"
-        style={{ background: "radial-gradient(ellipse at center, hsl(199 75% 48% / 0.12), hsl(196 85% 58% / 0.06), transparent 70%)" }}
+        style={{ background: "radial-gradient(ellipse at center, hsl(243 76% 62% / 0.18), hsl(258 82% 66% / 0.10), transparent 70%)" }}
       />
 
       <div className="container max-w-6xl mx-auto relative z-10">
