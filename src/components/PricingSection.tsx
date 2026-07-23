@@ -78,9 +78,10 @@ const PricingSection = () => {
 
               <div className="mt-auto">
                 <a
-                  href="https://syncpay.link/hWuBJs"
+                  href="https://pay.cakto.com.br/4fuejyf_776810"
                   target="_blank"
                   rel="noopener noreferrer"
+
                   className="flex w-full items-center justify-center gap-2 cta-cosmic font-bold py-3.5 md:py-4 rounded-xl text-center btn-shimmer active:scale-[0.98] transition-all duration-300 text-base group"
                 >
                   🔥 GARANTIR MINHA VAGA AGORA
@@ -144,9 +145,10 @@ const PricingSection = () => {
 
               <div className="mt-auto">
                 <a
-                  href="https://syncpay.link/7cIDjE"
+                  href="https://pay.cakto.com.br/cz2hi5z_776929"
                   target="_blank"
                   rel="noopener noreferrer"
+
                   className="flex w-full items-center justify-center gap-2 border-2 border-primary text-primary font-bold py-3.5 md:py-4 rounded-xl text-center hover:bg-primary hover:text-primary-foreground active:scale-[0.98] transition-all duration-300 text-base"
                 >
                   💎 GARANTIR ACESSO ANUAL
